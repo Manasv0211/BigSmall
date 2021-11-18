@@ -1,0 +1,11 @@
+2021-11-16 11:21:46,263  INFO [main] Application:46 - Driver Initialised
+ 2021-11-16 11:21:48,959  INFO [main] Application:23 - Driver open URL and entered into Landing Page
+ 2021-11-16 11:21:50,885  INFO [main] Application:28 - System clicked on sign in button
+ 2021-11-16 11:21:50,885 DEBUG [main] Application:29 - Successfully opened sign in page
+ 2021-11-16 11:22:01,517  INFO [main] Application:58 - Driver Closed
+ 2021-11-16 11:22:01,554 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+ 2021-11-16 11:22:01,555 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+ 2021-11-16 11:22:01,555 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2021-11-16 11:22:01,556 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2021-11-16 11:22:01,556 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/saipr/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 

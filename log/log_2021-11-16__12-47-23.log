@@ -1,0 +1,11 @@
+2021-11-16 00:47:24,379  INFO [main] Application:44 - Driver Initialised
+ 2021-11-16 00:47:27,422  INFO [main] Application:15 - Driver open URL and entered into Landing Page
+ 2021-11-16 00:47:28,886  INFO [main] Application:17 - System clicked on Book Available Services
+ 2021-11-16 00:47:28,886 DEBUG [main] Application:18 - Successfully submitted the details
+ 2021-11-16 00:47:29,084  INFO [main] Application:57 - Driver Closed
+ 2021-11-16 00:47:29,132 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+ 2021-11-16 00:47:29,133 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+ 2021-11-16 00:47:29,135 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2021-11-16 00:47:29,136 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2021-11-16 00:47:29,137 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/saipr/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 
