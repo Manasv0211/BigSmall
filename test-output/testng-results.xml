@@ -1,61 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-18T11:41:44 IST" name="Default suite" finished-at="2021-11-18T11:44:02 IST" duration-ms="138264">
+  <suite started-at="2021-11-19T23:44:59 IST" name="Default suite" finished-at="2021-11-19T23:49:36 IST" duration-ms="277715">
     <groups>
     </groups>
-    <test started-at="2021-11-18T11:41:44 IST" name="Default test" finished-at="2021-11-18T11:44:02 IST" duration-ms="138264">
+    <test started-at="2021-11-19T23:44:59 IST" name="Default test" finished-at="2021-11-19T23:49:36 IST" duration-ms="277715">
       <class name="Runner.Application">
-        <test-method is-config="true" signature="startup()[pri:0, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:41:44 IST" name="startup" finished-at="2021-11-18T11:41:44 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="startup()[pri:0, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:44:58 IST" name="startup" finished-at="2021-11-19T23:44:59 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:41:44 IST" name="beforeClass" finished-at="2021-11-18T11:41:45 IST" duration-ms="1578" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:44:59 IST" name="beforeClass" finished-at="2021-11-19T23:45:00 IST" duration-ms="1657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="signinbuttonValidation()[pri:1, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:41:45 IST" name="signinbuttonValidation" finished-at="2021-11-18T11:42:02 IST" duration-ms="16961" status="PASS">
+        <test-method signature="signinbuttonValidation()[pri:1, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:45:00 IST" name="signinbuttonValidation" finished-at="2021-11-19T23:47:17 IST" duration-ms="137210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signinbuttonValidation -->
-        <test-method signature="Giftcard()[pri:2, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:42:02 IST" name="Giftcard" finished-at="2021-11-18T11:42:26 IST" duration-ms="24166" status="PASS">
+        <test-method signature="Giftcard()[pri:2, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:47:17 IST" name="Giftcard" finished-at="2021-11-19T23:47:44 IST" duration-ms="26169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Giftcard -->
-        <test-method signature="addingproducttocart()[pri:3, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:42:26 IST" name="addingproducttocart" finished-at="2021-11-18T11:42:49 IST" duration-ms="22510" status="PASS">
+        <test-method signature="addingproducttocart()[pri:3, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:47:44 IST" name="addingproducttocart" finished-at="2021-11-19T23:48:08 IST" duration-ms="24292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingproducttocart -->
-        <test-method signature="searchproduct()[pri:4, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:42:49 IST" name="searchproduct" finished-at="2021-11-18T11:42:57 IST" duration-ms="7567" status="PASS">
+        <test-method signature="searchproduct()[pri:4, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:48:08 IST" name="searchproduct" finished-at="2021-11-19T23:48:15 IST" duration-ms="6906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchproduct -->
-        <test-method signature="shopbycateg()[pri:5, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:42:57 IST" name="shopbycateg" finished-at="2021-11-18T11:43:09 IST" duration-ms="12905" status="PASS">
+        <test-method signature="shopbycateg()[pri:5, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:48:15 IST" name="shopbycateg" finished-at="2021-11-19T23:48:28 IST" duration-ms="13719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shopbycateg -->
-        <test-method signature="codAvailability()[pri:6, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:09 IST" name="codAvailability" finished-at="2021-11-18T11:43:22 IST" duration-ms="12437" status="PASS">
+        <test-method signature="codAvailability()[pri:6, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:48:28 IST" name="codAvailability" finished-at="2021-11-19T23:48:42 IST" duration-ms="13701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- codAvailability -->
-        <test-method signature="PersonalisedGiftsPage()[pri:7, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:22 IST" name="PersonalisedGiftsPage" finished-at="2021-11-18T11:43:31 IST" duration-ms="9539" status="PASS">
+        <test-method signature="PersonalisedGiftsPage()[pri:7, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:48:42 IST" name="PersonalisedGiftsPage" finished-at="2021-11-19T23:48:52 IST" duration-ms="9699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PersonalisedGiftsPage -->
-        <test-method signature="CreateAcc()[pri:8, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:31 IST" name="CreateAcc" finished-at="2021-11-18T11:43:40 IST" duration-ms="8925" status="PASS">
+        <test-method signature="CreateAcc()[pri:8, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:48:52 IST" name="CreateAcc" finished-at="2021-11-19T23:49:02 IST" duration-ms="9665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateAcc -->
-        <test-method signature="validateWhatsnewPage()[pri:9, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:40 IST" name="validateWhatsnewPage" finished-at="2021-11-18T11:43:48 IST" duration-ms="7256" status="PASS">
+        <test-method signature="validateWhatsnewPage()[pri:9, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:49:02 IST" name="validateWhatsnewPage" finished-at="2021-11-19T23:49:10 IST" duration-ms="8002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWhatsnewPage -->
-        <test-method signature="GiftsPage()[pri:10, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:48 IST" name="GiftsPage" finished-at="2021-11-18T11:43:58 IST" duration-ms="10234" status="PASS">
+        <test-method signature="GiftsPage()[pri:10, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:49:10 IST" name="GiftsPage" finished-at="2021-11-19T23:49:21 IST" duration-ms="11518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GiftsPage -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:Runner.Application@5ddeb7cb]" started-at="2021-11-18T11:43:58 IST" name="classTeardown" finished-at="2021-11-18T11:44:02 IST" duration-ms="4159" status="PASS">
+        <test-method signature="CorporateGifts()[pri:11, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:49:21 IST" name="CorporateGifts" finished-at="2021-11-19T23:49:32 IST" duration-ms="11005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CorporateGifts -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:Runner.Application@70ed52de]" started-at="2021-11-19T23:49:32 IST" name="classTeardown" finished-at="2021-11-19T23:49:36 IST" duration-ms="4132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTeardown -->

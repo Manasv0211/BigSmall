@@ -74,6 +74,10 @@ public class HomePage {
 			return driver.findElement(HomePageUI.HarryPottergift);
 		}
 		
+		public WebElement corporategifts() {
+			return driver.findElement(HomePageUI.corporategifts);
+		}
+		
 		
 		
 		

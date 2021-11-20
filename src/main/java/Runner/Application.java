@@ -37,16 +37,15 @@ public class Application extends BaseClass {
 			Thread.sleep(2000);
 			signin.customerpass().sendKeys(data2.get(i));
 			Thread.sleep(2000);
+			er.startTest("Successfully entered url and signedin");
 			signin.customeremailid().clear();
 			signin.customerpass().clear();
 			Thread.sleep(2000);
 			// signin.signinbutton().sendKeys(Keys.ENTER);
-//		//	log.info("Entering user name and password and signing in");
 		}
-		er.startTest("Successfully entered url and signedin");
+		
 		log.info("System clicked on sign in button");
 		log.debug("Successfully opened sign in page");
-		// test.log(LogStatus.PASS, "Successfully entered page");
 		er.endTest();
 	}
 
@@ -58,6 +57,7 @@ public class Application extends BaseClass {
 		Thread.sleep(2000);
 		homepage.giftcard().click();
 		er.startTest("Successfully navigated giftcardpage");
+		log.info("Successfully navigated to giftcardpage");
 		String gtext = giftcard.validate().getText();
 		Assert.assertEquals(gtext, "Gift Card");
 		for (int i = 0; i < 4; i++) {
@@ -72,9 +72,9 @@ public class Application extends BaseClass {
 		giftcard.goingbacktocart().click();
 		if (driver.getPageSource().contains("Shopping Cart")) {
 			System.out.println("succesfully added to cart");
+			log.info("succesfully added to cart");
 		}
 		er.endTest();
-		// test = reporter.startTest("Giftcard");
 	}
 
 	// testcase 3== searching for product in homepage and clicking on it and
@@ -87,7 +87,7 @@ public class Application extends BaseClass {
 		System.out.println(producttext);
 		Thread.sleep(2000);
 		homepage.product().click();
-
+		log.info("user clicks on product and navigated to productpage");
 		productcmon.productwishlist().click();
 		Thread.sleep(10000);
 		for (int i = 0; i < 1; i++) {
@@ -97,6 +97,7 @@ public class Application extends BaseClass {
 		productcmon.addtocart().click();
 		er.startTest("succesfully added product to cart");
 		productcmon.closingsohppinglist().click();
+		log.info("closed shoppinglist details");
 		Thread.sleep(2000);
 		homepage.logo().click();
 		// test = reporter.startTest("addingproducttocart");
@@ -113,9 +114,8 @@ public class Application extends BaseClass {
 			homepage.searchbox().sendKeys(data.get(i));
 			homepage.searchbox().sendKeys(Keys.ENTER);
 			er.startTest("successfully searched for a product from excel");
-			// test = reporter.startTest("searchproduct");
+			log.info("searched for product from excel");
 		}
-		// System.out.println(data);
 		er.endTest();
 
 	}
@@ -134,13 +134,16 @@ public class Application extends BaseClass {
 			if (shopbycat.jewpro().get(i).getText().contains("Morning Glory Semi-Precious Ring")) {
 				Thread.sleep(2000);
 				er.startTest("Successfully found Morning Glory Semi-Precious Ring");
+				log.info("Successfully found Morning Glory Semi-Precious Ring");
 				System.out.println("Product found!");
+				log.info("Product found!");
 				shopbycat.jewpro().get(i).click();
 				break;
 				// check the name of the least priced product
 			}
 		}
 		productcmon.productwishlist().click();
+		log.info("Adds jewellery product to wishlist");
 		er.endTest();
 	}
 
@@ -181,6 +184,7 @@ public class Application extends BaseClass {
 		for (int i = 0; i < pg.getProducts().size(); i++) {
 			if (pg.getProducts().get(i).getText().contains("Personalized Pop Art")) {
 				er.startTest("Successfully found Personalized Pop Art");
+				log.info("Successfully found Personalized Pop Art");
 				Thread.sleep(2000);
 				System.out.println("Product found!");
 				break;
@@ -198,9 +202,6 @@ public class Application extends BaseClass {
 //		ca.getlname().sendKeys("2");
 //		ca.getEmail().sendKeys("user06@gmail.com");
 //		ca.getPassword().sendKeys("!123Wr");
-		
-		
-		
 		Excel ex = new Excel();
 		ArrayList<String> data1 = ex.getData("firstname");
 		ArrayList<String> data2 = ex.getData("lastname");
@@ -215,11 +216,14 @@ public class Application extends BaseClass {
 			ca.getEmail().sendKeys(data3.get(i));
 			//Thread.sleep(2000);
 			ca.getPassword().sendKeys(data4.get(i));
+			er.startTest("Successfully entered firstname,lastname,emailid and password");
+			log.info("Successfully entered firstname,lastname,emailid and password");
 			Thread.sleep(2000);
 			ca.getfname().clear();
 			ca.getlname().clear();
 			ca.getEmail().clear();
 			ca.getPassword().clear();
+			log.info("cleared");
 			//Thread.sleep(2000);
 		}
 		
@@ -231,6 +235,7 @@ public class Application extends BaseClass {
 //			System.out.println("Validated!");
 //		}
 		System.out.println(ca.getValidate().getText());
+		er.endTest();
 
 	}
 
@@ -252,14 +257,18 @@ public class Application extends BaseClass {
 		Actions a1 = new Actions(driver);
 		WebElement move = gift.getGifts();
 		a1.moveToElement(move).build().perform();
+		er.startTest("hovered on gifts");
 		gift.getDIY().click();
 		if (gift.getValidate().getText().contains("DIY Gifts")) {
 			Assert.assertTrue(true);
+			log.info("successfully validated");
 		}
 		int i = 0;
 		Select s = new Select(gift.getSortBy());
 		Thread.sleep(2000);
 		s.selectByValue("price-ascending");
+		er.startTest("sorted it in price-ascending");
+		log.info("sorted it in price-ascending");
 		for (i = 0; i < gift.getProducts().size(); i++) {
 			if (gift.getProducts().get(i).getText().contains("DIY Hot Air Balloon Lamp Shade")) {
 				Thread.sleep(2000);
@@ -268,6 +277,39 @@ public class Application extends BaseClass {
 				//check the name of the least priced product
 			}
 		}
+		er.endTest();
 
+	}
+	
+	@Test(priority=11)
+	public void CorporateGifts() throws IOException, InterruptedException {
+		homepage.logo().click();
+		homepage.corporategifts().click();
+		Excel ex = new Excel();
+		ArrayList<String> data1 = ex.getData("fullname");
+		ArrayList<String> data2 = ex.getData("emailaddress");
+		ArrayList<String> data3 = ex.getData("phonenumber");
+		ArrayList<String> data4 = ex.getData("enquiry");
+		
+		for (int i = 1; i < data1.size(); i++) {
+			corporategifts.fullname().sendKeys(data1.get(i));
+			//Thread.sleep(2000);
+			corporategifts.emailaddress().sendKeys(data2.get(i));
+			//Thread.sleep(2000);
+			corporategifts.phonenumber().sendKeys(data3.get(i));
+			//Thread.sleep(2000);
+			corporategifts.enquiry().sendKeys(data4.get(i));
+			er.startTest("Successfully entered fullname,emailaddress,phonenumber and enquiry");
+			log.info("Successfully entered fullname,emailaddress,phonenumber and enquiry");
+			Thread.sleep(2000);
+			corporategifts.submit().click();
+			er.startTest("Message after clicking on submit");
+			String text=corporategifts.text().getText();
+			Assert.assertEquals(text, "Thanks for contacting us. We'll get back to you as soon as possible.");
+			Thread.sleep(2000);
+			er.endTest();
+		}
+		
+		
 	}
 }

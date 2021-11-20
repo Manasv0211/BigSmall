@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentTest;
 
+import PageObjects.CorporateGifts;
 import PageObjects.CreateAccount;
 import PageObjects.GiftCardPage;
 import PageObjects.Gifts;
@@ -47,6 +48,7 @@ public class BaseClass {
 	public static CreateAccount ca;
 	public static WhatsNew wn;
 	public static Gifts gift;
+	public static CorporateGifts corporategifts;
 	
 	@BeforeSuite
 	public void startup() throws IOException {
@@ -72,6 +74,7 @@ public class BaseClass {
 		ca=new CreateAccount(driver);
 		wn=new WhatsNew(driver);
 		gift=new Gifts(driver);
+		corporategifts=new CorporateGifts(driver);
 		
 	}
 	
